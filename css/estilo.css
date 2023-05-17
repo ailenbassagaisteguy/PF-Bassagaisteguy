@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 /* header */
-
 .header{
     background-color: rgb(0, 0, 0);
     font-family: 'Staatliches', cursive; color: #faf6f6;
-}
+} 
+
 /* pages */
 .volver{
     text-decoration: none;
@@ -56,6 +56,17 @@
 .menu li a:hover{
     color: rgb(151, 128, 22);
     background-color: rgb(224, 204, 148);
+}
+@media (max-width: 400px){
+    .header h1{
+        font-size: medium;
+    }
+    .menu{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
 }
     
 /* main */
@@ -140,15 +151,20 @@
     opacity: 0.8;
     transition: opacity 0.3s;
   }
-  
   .catalogo img:hover {
     opacity: 1;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 400px) {
     .catalogo {
       grid-template-columns: repeat(2, 1fr);
-    }
   }
+  .catalogo .imagenes{
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+  }
+}
 
 /* page turnos formulario con bootstrap */
 
@@ -161,6 +177,15 @@
     padding: 5px;
     width: 300px;
     height: auto;
+}
+@media (max-width: 400px){
+    .formulario label,
+    .formulario input,
+    .formulario .form-text,
+    .formulario .form-check-label,
+    .formulario button {
+    font-size: 14px;
+    }
 }
 .turnoPiercing{
     background-color: #f5e7d2;

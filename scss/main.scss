@@ -51,10 +51,13 @@ $font-family2: 'Pragati Narrow', sans-serif;
         margin: 10 auto;
         padding: 10px;
         font-family: $font-family2;
-        font-size: large;
         text-align: center;
-        line-height: 1;
-        background-color: $colorletra;
+        font-size:x-large;
+        font-style: oblique;
+        font-weight: bold;
+        background-color: rgb(177, 160, 83);
+        color: $colorletra;
+    
     }
     .parrafo{
         margin: 10 auto;
@@ -89,17 +92,16 @@ $font-family2: 'Pragati Narrow', sans-serif;
         opacity: 1;
         transform: scale(1.10, 1.10)
       }
+      
       @media (max-width: 400px) {
         .catalogo {
-          grid-template-columns: repeat(2, 1fr);
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(1, 1fr);
+        }
       }
-      .catalogo .imagenes{
-        width: 100%;
-        height: auto;
-        display: block;
-        text-align: center;
-      }
-    }
+
+}       
     .turnoPiercing{
         font-size: 30px;
         background-color:$colorletra;
@@ -149,7 +151,6 @@ $font-family2: 'Pragati Narrow', sans-serif;
     }
     .datosDeContacto{
         font-family: $font-family1; color:$colorletra;
-        background-color: rgb(151, 128, 22);
         font-size: 20px;
         font-weight: lighter;
         text-align: center;
@@ -157,6 +158,12 @@ $font-family2: 'Pragati Narrow', sans-serif;
         padding: 10px;
         height: auto;
         list-style-type:none;
+        background-color: rgb(243, 223, 157);
+        color: #a8840e; 
+            &:hover {
+                background-color: white;
+                color: black;
+              }
     }
     
     .mapa{
@@ -172,8 +179,6 @@ $font-family2: 'Pragati Narrow', sans-serif;
             transform: scale(1.50,1.50)
           }
     }
-
-}
 .centrar{
     text-align: center;
 }

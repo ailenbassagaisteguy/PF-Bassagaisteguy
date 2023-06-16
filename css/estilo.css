@@ -14,48 +14,47 @@
     text-align: center;
     margin: 0 auto;
     padding: 10px; }
-  .header .menu {
-    margin: 0 auto;
-    padding: 10px;
-    height: auto;
-    text-align: center;
-    list-style-type: none;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: medium;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
-    .header .menu .menu li {
-      display: flex;
+  @media (max-width: 400px) {
+    .header .header h1 {
+      font-size: medium; }
+    .header .navbar {
+      display: block;
+      width: 100%;
       text-align: center;
-      margin: 0 auto;
-      padding: 10px; }
-    .header .menu .menu li a:hover {
-      color: #978016;
-      background-color: #e0cc94; }
-    @media (max-width: 400px) {
-      .header .menu .header h1 {
-        font-size: medium; }
-      .header .menu .menu {
-        display: block;
-        width: 100%;
-        text-align: center;
-        font-size: 15px; } }
-  .header .volver {
-    text-decoration: none;
-    width: auto;
-    font-size: 20px;
-    font-weight: lighter;
+      font-size: 15px; } }
+  .header .container-fluid {
+    background-color: black;
+    font-family: "Staatliches", cursive;
+    color: #ffffff; }
+  .header .dropdown-menu {
+    background-color: #f3df9d; }
+    .header .dropdown-menu .dropdown-item {
+      color: #a8840e; }
+      .header .dropdown-menu .dropdown-item:hover {
+        background-color: white;
+        color: black; }
+  .header .d-flex input[type="search"] {
+    border: 1px solid white;
+    color: white;
+    background-color: #000000; }
+  .header .d-flex button[type="submit"] {
+    border: 1px solid white;
+    color: white; }
+    .header .d-flex button[type="submit"]:hover {
+      background-color: white;
+      color: black; }
+
+.volver {
+  text-decoration: none;
+  width: auto;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #978016;
+  padding: 10px;
+  text-align: left; }
+  .volver:hover {
     color: #978016;
-    padding: 10px;
-    text-align: left; }
-    .header .volver .volver:hover {
-      color: #978016;
-      background-color: #e0cc94; }
+    background-color: #e0cc94; }
 
 .centrar {
   text-align: center; }
@@ -106,10 +105,12 @@
     margin: 10 auto;
     padding: 10px;
     font-family: "Pragati Narrow", sans-serif;
-    font-size: large;
     text-align: center;
-    line-height: 1;
-    background-color: #ffffff; }
+    font-size: x-large;
+    font-style: oblique;
+    font-weight: bold;
+    background-color: #b1a053;
+    color: #ffffff; }
   .main .parrafo {
     margin: 10 auto;
     padding: 10px;
@@ -140,74 +141,81 @@
     transform: scale(1.1, 1.1); }
   @media (max-width: 400px) {
     .main .catalogo {
-      grid-template-columns: repeat(2, 1fr); }
-    .main .catalogo .imagenes {
-      width: 100%;
-      height: auto;
-      display: block;
-      text-align: center; } }
-  .main .turnoPiercing {
-    font-size: 30px;
-    background-color: #ffffff;
-    color: #a79029;
-    font-style: oblique;
-    font-weight: lighter;
-    text-align: center;
-    margin: 10px;
-    padding: 10px; }
-  .main .turnoTatto {
-    font-size: 30px;
-    background-color: #ffffff;
-    color: #a79029;
-    font-style: oblique;
-    font-weight: lighter;
-    text-align: center;
-    margin: 10px;
-    padding: 10px; }
-  .main .formulario {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr); } }
+
+.turnoPiercing {
+  font-size: 30px;
+  background-color: #ffffff;
+  color: #a79029;
+  font-style: oblique;
+  font-weight: lighter;
+  text-align: center;
+  margin: 10px;
+  padding: 10px; }
+
+.turnoTatto {
+  font-size: 30px;
+  background-color: #ffffff;
+  color: #a79029;
+  font-style: oblique;
+  font-weight: lighter;
+  text-align: center;
+  margin: 10px;
+  padding: 10px; }
+
+.formulario {
+  font-family: "Staatliches", cursive;
+  color: #ffffff;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5px;
+  width: 300px;
+  height: auto; }
+  @media (max-width: 400px) {
+    .formulario .formulario label,
+    .formulario .formulario input,
+    .formulario .formulario .form-text,
+    .formulario .formulario .form-check-label,
+    .formulario .formulario button {
+      font-size: 14px; } }
+  .formulario .enviar {
     font-family: "Staatliches", cursive;
     color: #ffffff;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 5px;
-    width: 300px;
-    height: auto; }
-    @media (max-width: 400px) {
-      .main .formulario .formulario label,
-      .main .formulario .formulario input,
-      .main .formulario .formulario .form-text,
-      .main .formulario .formulario .form-check-label,
-      .main .formulario .formulario button {
-        font-size: 14px; } }
-    .main .formulario .enviar {
-      font-family: "Staatliches", cursive;
-      color: #ffffff;
-      background-color: #978016; }
-      .main .formulario .enviar .enviar:hover {
-        color: #978016;
-        background-color: #e0cc94; }
-  .main .datosDeContacto {
-    font-family: "Staatliches", cursive;
-    color: #ffffff;
-    background-color: #978016;
-    font-size: 20px;
-    font-weight: lighter;
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    height: auto;
-    list-style-type: none; }
-  .main .mapa .imagenes {
-    margin: 0 auto;
-    padding: 40px;
-    text-align: center;
-    width: 250px;
-    display: block; }
-  .main .mapa .imagenes:hover {
-    opacity: 1;
-    transform: scale(1.5, 1.5); }
+    background-color: #978016; }
+    .formulario .enviar .enviar:hover {
+      color: #978016;
+      background-color: #e0cc94; }
+
+.datosDeContacto {
+  font-family: "Staatliches", cursive;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  height: auto;
+  list-style-type: none;
+  background-color: #f3df9d;
+  color: #a8840e; }
+  .datosDeContacto:hover {
+    background-color: white;
+    color: black; }
+
+.mapa .imagenes {
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  width: 250px;
+  display: block; }
+
+.mapa .imagenes:hover {
+  opacity: 1;
+  transform: scale(1.5, 1.5); }
 
 .centrar {
   text-align: center; }
@@ -219,8 +227,22 @@
 
 .footer {
   background-color: black;
-  font-family: "Pragati Narrow", sans-serif; }
+  font-family: "Pragati Narrow", sans-serif;
+  margin: 0 auto;
+  padding: 20px; }
   .footer .logoFooter {
+    font-family: "Pragati Narrow", sans-serif;
+    font-weight: lighter;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: medium;
+    color: #ffffff;
+    text-decoration: none; }
+    .footer .logoFooter:hover {
+      color: #978016;
+      background-color: #e0cc94; }
+  .footer .instagram {
     font-family: "Pragati Narrow", sans-serif;
     font-weight: lighter;
     width: 30px;
@@ -228,20 +250,14 @@
     font-size: medium;
     color: #ffffff;
     text-decoration: none; }
-    .footer .logoFooter .logoFooter:hover {
+    .footer .instagram:hover {
       color: #978016;
       background-color: #e0cc94; }
-  .footer .logoTarjetas {
-    width: 70px;
-    margin: 0 auto; }
   .footer .h4 {
     font-size: medium;
     font-weight: lighter;
     color: #ffffff;
     text-align: center; }
-    .footer .h4 .h4:hover {
-      color: #978016;
-      background-color: #e0cc94; }
 
 .centrar {
   text-align: center; }

@@ -18,16 +18,34 @@
 <body>
     <header class="header">
         <h3 class="volver"><a href="../index.html" class="volver">VOLVER</a></h3>
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html" class="menu">Inicio</a></li>
-                <li><a href="./nosotras.html" class="menu">Nosotras</a></li>
-                <li><a href="./catalogo.html" class="menu">Catalogo</a></li>
-                <li><a href="./turnos.html" class="menu">Turnos</a></li>
-                <li><a href="./contacto.html" class="menu">Contacto</a></li>
-                <li><a href="./ingresar.html" class="menu">Ingresar</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                        <li><a class="dropdown-item" href="./nosotras.html">Nosotras</a></li>
+                        <li><a class="dropdown-item" href="./catalogo.html">Catálogo</a></li>
+                        <li><a class="dropdown-item" href="./turnos.html">Turnos</a></li>
+                        <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+          </div>
+      </nav>
     </header>
     <main class="main">
         <h2 class="turnoPiercing">Body piercing</h2>
@@ -46,7 +64,7 @@
               <div id="emailHelp" class="form-text">En caso de ser menor inserte permiso del tutor</div>
             </div>
             <div>
-                <label for="diaYHorario" class="form-label">Dia y Horario</label>
+                <label for="diaYHorario" class="form-label">Día y Horario</label>
                 <input type="password" class="form-control" id="exampleInputPassword1">
             </div>
             <div>
@@ -67,7 +85,7 @@
             </div>
             <button type="submit" class="enviar">Enviar</button>
           </form>
-          <h2 class="turnoTatto">Tatto</h2>
+          <h2 class="turnoTatto">Tattoo</h2>
           <form class="formulario">
               <div>
                 <label for="nombre" class="form-label">Nombre</label>
@@ -83,7 +101,7 @@
                 <div id="emailHelp" class="form-text">En caso de ser menor inserte permiso del tutor</div>
               </div>
               <div>
-                  <label for="diaYHorario" class="form-label">Dia y Horario</label>
+                  <label for="diaYHorario" class="form-label">Día y Horario</label>
                   <input type="password" class="form-control" id="exampleInputPassword1">
               </div>
               <div>
@@ -107,24 +125,20 @@
         
     </main>
     <footer class="footer">
-        <hr>
-        <section class="centrar">
-                <img src="../img/lododeinstagram.png" class="logoFooter" alt="logo de instagram">    
-        </section>
-        <h4 class="centrar">
-            <a href="https://www.instagram.com/etel_romina_/" class="logoFooter">Instagram Tattoos</a>
-            <a href="https://www.instagram.com/arantxabodypiercing/" class="logoFooter">Instagram Body piercing</a>
-        </h4> 
-        <section class="centrar">
-                <img src="../img/logodemercadopago.png" class="logoFooter" alt="logo de mercado pago">
-                <img src="../img/logodetarjetas.png" class="logoTarjetas" alt="logo de tarjetas">
-            </section>
-          <h4 class="h4">Medios de pago</h4>     
-        <h4 class="h4">
-            ¡<a href="./ingresar.html" class="logoFooter">Suscribite</a> y recibí promociones exclusivas!
-        </h4>
+      <section class="centrar"> 
+               <img src="../img/logodeinstagram.png" class="logoFooter" alt="logo de instagram">
+               <img src="../img/logodetelefono.png" class="logoFooter" alt="logo de telefono">
+               <img src="../img/logodeubicacion.png" class="logoFooter" alt="logo de ubicacion">
+               <img src="../img/logodemercadopago.png" class="logoFooter" alt="logo de mercado pago">
+               <img src="../img/logodetarjetas.png" class="logoFooter" alt="logo de tarjetas">
+      </section>
+      <h4 class="centrar">
+          <a href="https://www.instagram.com/etel_romina_/" target="_blank" class="instagram">Instagram Tattoos</a>
+          <a href="https://www.instagram.com/arantxabodypiercing/" target="_blank" class="instagram">Instagram Body piercing</a>
+      </h4> 
+      <h4 class="h4">0123456789</h4>
+      <h4 class="h4">Bulevar Mitre 5001. Córdoba, Argentina</h4>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 </body>
